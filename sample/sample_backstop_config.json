@@ -1,0 +1,82 @@
+{
+  "id": "serverless-backstop-runner-test",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 800,
+      "height": 768
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Github login",
+      "url": "http://github.com/login",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": false,
+      "expect": 0,
+      "misMatchThreshold": 0.1,
+      "requireSameDimensions": true,
+      "onReadyScript": ""
+    },
+    {
+      "label": "Twitch login",
+      "url": "https://www.twitch.tv/login",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": false,
+      "expect": 0,
+      "misMatchThreshold": 0.1,
+      "requireSameDimensions": true,
+      "onReadyScript": ""
+    },
+    {
+      "label": "Facebook login",
+      "url": "https://www.facebook.com/login",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": false,
+      "expect": 0,
+      "misMatchThreshold": 0.1,
+      "requireSameDimensions": true,
+      "onReadyScript": ""
+    }
+  ],
+  "report": [
+    "browser"
+  ],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": [
+      "--no-sandbox"
+    ]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

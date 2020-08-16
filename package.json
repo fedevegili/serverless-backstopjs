@@ -1,22 +1,23 @@
 {
   "name": "serverless-backstopjs",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "logs": "serverless logs -f serverless-backstopjs-fn",
-    "deploy": "serverless deploy --stage dev"
-  },
-  "author": "fedevegili",
-  "license": "ISC",
+  "main": "handler.js",
+  "repository": "https://github.com/fedevegili/serverless-backstopjs.git",
+  "author": "Fernando Devegili <fedevegili@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "backstopjs": "git+https://github.com/jobscore/BackstopJS.git",
     "chrome-aws-lambda": "~3.1.1",
     "puppeteer": "3.1.0",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.5",
     "serverless": "^1.58.0",
     "serverless-offline": "^5.12.1"
   },
-  "devDependencies": {}
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
 }

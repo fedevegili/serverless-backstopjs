@@ -2,3 +2,4 @@ node_modules
 .serverless
 .idea
 .DS_Store
+dist
