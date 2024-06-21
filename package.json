@@ -1,16 +1,15 @@
 {
   "name": "serverless-backstopjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "handler.js",
   "repository": "https://github.com/fedevegili/serverless-backstopjs.git",
   "author": "Fernando Devegili <fedevegili@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "backstopjs": "git+https://github.com/jobscore/BackstopJS.git",
-    "chrome-aws-lambda": "~3.1.1",
-    "puppeteer": "3.1.0",
-    "serverless": "^1.58.0",
-    "serverless-offline": "^5.12.1"
+    "@sparticuz/chromium": "^119.0.0",
+    "backstopjs": "git+https://github.com/jobscore/BackstopJS.git#b77c1aaa51a6b9314b21fe362b4dd16dfc0203d8",
+    "serverless": "^3.35.2",
+    "serverless-offline": "^13.1.0"
   },
   "scripts": {
     "lint": "eslint . --fix"

@@ -2,19 +2,17 @@ service: serverless-backstopjs
 
 provider:
   name: aws
-  runtime: nodejs12.x
-  apiKeys:
-    - serverless-backstopjs-key-${opt:stage, self:provider.stage}
+  runtime: nodejs18.x
+  memorySize: 2048
+  timeout: 30
+  apiGateway:
+    apiKeys:
+      - serverless-backstopjs-key-dev
 
 package:
   exclude:
     - node_modules/puppeteer/.local-chromium/**
     - node_modules/aws-sdk/**
-    - node_modules/typescript/**
-    - node_modules/serverless/**
-    - node_modules/backstopjs/node_modules/puppeteer/**
-    - spec/**
-    - new_images/**
 
 plugins:
   - serverless-offline
@@ -22,10 +20,7 @@ plugins:
 functions:
   serverless-backstopjs-fn:
     handler: handler.index
-    timeout: 30
-    memorySize: 1024
     events:
       - http:
-          method: POST
           path: /serverless-backstopjs
-          private: true
+          method: post

@@ -7,14 +7,8 @@
     "extends": [
         "airbnb-base"
     ],
-    "parserOptions": {
-        "ecmaVersion": 11
-    },
     "rules": {
         "no-console": 0,
-        "indent": ["error", "tab"],
-        "no-tabs": 0,
-        "import/no-unresolved": 0,
         "no-buffer-constructor": 0
     }
 }
